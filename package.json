@@ -1,0 +1,9 @@
+{
+	"name" : "package.autolod",
+	"displayName" : "AutoLOD",
+	"version" : "1.0.0",
+	"unity" : "2018.1",
+	"description" : "Automatic LOD generation + scene optimization.",
+	"dependencies" : {
+	}
+}

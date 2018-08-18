@@ -140,7 +140,7 @@ namespace UnityEditor.Experimental.AutoLOD
         void AddCallbacks()
         {
             EditorApplication.update += EditorUpdate;
-            EditorApplication.hierarchyWindowChanged += OnHierarchyChanged;
+            EditorApplication.hierarchyChanged += OnHierarchyChanged;
             Selection.selectionChanged += OnSelectionChanged;
             Camera.onPreCull += PreCull;
             SceneView.onSceneGUIDelegate += OnSceneGUI;
@@ -149,7 +149,7 @@ namespace UnityEditor.Experimental.AutoLOD
         void RemoveCallbacks()
         {
             EditorApplication.update -= EditorUpdate;
-            EditorApplication.hierarchyWindowChanged -= OnHierarchyChanged;
+            EditorApplication.hierarchyChanged -= OnHierarchyChanged;
             Selection.selectionChanged -= OnSelectionChanged;
             Camera.onPreCull -= PreCull;
             SceneView.onSceneGUIDelegate -= OnSceneGUI;

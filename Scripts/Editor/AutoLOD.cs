@@ -227,7 +227,7 @@ namespace UnityEditor.Experimental.AutoLOD
             }
         }
 
-        [MenuItem("GameObject/AutoLOD/Generate LODs (Prefabs and Scene GameObjects)", priority = 11)]
+        [MenuItem("GameObject/Generate LODs (Prefabs and Scene GameObjects)", priority = 11)]
         static void GenerateLODs(MenuCommand menuCommand)
         {
             MonoBehaviourHelper.StartCoroutine(GenerateLODsCoroutine(menuCommand));
@@ -263,7 +263,7 @@ namespace UnityEditor.Experimental.AutoLOD
                 Selection.activeObject = folderAsset;
         }
 
-        [MenuItem("GameObject/AutoLOD/Generate LODs (Prefabs and Scene GameObjects)", validate = true, priority = 11)]
+        [MenuItem("GameObject/Generate LODs (Prefabs and Scene GameObjects)", validate = true, priority = 11)]
         static bool CanGenerateLODs()
         {
             bool enabled = true;
@@ -288,7 +288,7 @@ namespace UnityEditor.Experimental.AutoLOD
             return enabled;
         }
 
-        [MenuItem("Assets/AutoLOD/Generate LOD", false)]
+        [MenuItem("Assets/Generate LOD", false)]
         static void ForceGenerateLOD()
         {
             var selection = Selection.activeGameObject;
@@ -319,7 +319,7 @@ namespace UnityEditor.Experimental.AutoLOD
             }
         }
 
-        [MenuItem("Assets/AutoLOD/Generate LOD", true)]
+        [MenuItem("Assets/Generate LOD", true)]
         static bool CanForceGenerateLOD()
         {
             var selection = Selection.activeGameObject;
@@ -328,7 +328,7 @@ namespace UnityEditor.Experimental.AutoLOD
         }
 
 
-        [MenuItem("GameObject/AutoLOD/Remove LODs", validate = true, priority = 11)]
+        [MenuItem("GameObject/Remove LODs", validate = true, priority = 11)]
         static bool RemoveLODsValidate()
         {
             // Allow processing of whole directories
@@ -349,7 +349,7 @@ namespace UnityEditor.Experimental.AutoLOD
             return false;
         }
 
-        [MenuItem("GameObject/AutoLOD/Remove LODs", priority = 11)]
+        [MenuItem("GameObject/Remove LODs", priority = 11)]
         static void RemoveLODs(MenuCommand menuCommand)
         {
             var activeObject = Selection.activeObject;
@@ -370,7 +370,7 @@ namespace UnityEditor.Experimental.AutoLOD
                 Selection.activeObject = folderAsset;
         }
 
-        [MenuItem("GameObject/AutoLOD/Remove Children LODGroups", priority = 11)]
+        [MenuItem("GameObject/Remove Children LODGroups", priority = 11)]
         static void RemoveChildrenLODGroups(MenuCommand menuCommand)
         {
             var folderAsset = Selection.activeObject as DefaultAsset;

@@ -12,7 +12,7 @@ namespace UnityEditor.Experimental.AutoLOD
         Material m_Material;
         bool m_UniqueMaterials;
 
-        [MenuItem("GameObject/AutoLOD/Grid Placement Utility")]
+        [MenuItem("GameObject/Grid Placement Utility")]
         static void Init()
         {
             EditorWindow.GetWindow<GridPlacementUtility>(true, "Grid Placement Utility").Show();

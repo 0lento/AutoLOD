@@ -1,4 +1,14 @@
-# AutoLOD
+# AutoLOD - converted to be used with Unity Package Manager
+
+Either place this in:  
+**_&lt;project folder&gt;/Packages/package.autolod_**
+
+or copy this somewhere with folder name **_package.autolod_** and add following line to your **_&lt;project folder&gt;/Packages/manifest.json_** dependencies (replace ******* with either absolute or relative path):  
+
+**_"package.autolod" : "file:*******/package.autolod",_**
+
+-----------------------------------------------------------------------
+
 Automatic LOD generation + scene optimization - Initial release was on January 12, 2018 via [blogpost](https://blogs.unity3d.com/2018/01/12/unity-labs-autolod-experimenting-with-automatic-performance-improvements/)
 
 ## Experimental Status
